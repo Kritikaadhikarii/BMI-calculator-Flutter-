@@ -1,3 +1,4 @@
+import 'package:compliment_app/Config/Theme.dart';
 import 'package:compliment_app/Pages/HomePage.dart';
 import 'package:flutter/material.dart';
 
@@ -12,10 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'BMI Calculator',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: lightTheme,
+      darkTheme: darkTheme,
       home: HomePage(),
     );
   }
